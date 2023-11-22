@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+
+    <h3 class="text-center">Calculatrice</h3>
+  <!-------------------calculatrice------------------>
+  <section id="section" class="mt-5">
+    <div class="divSection">
+      <div class="div-div">
+        <form action="" class="form mt-3">
+          <input type="text" id="display" placeholder="0" disabled>
+          <input type="text" id="lim" placeholder="0" disabled>
+          <div></div>
+        </form>
+    
+        </div>
+        <div class="containe mt-3 mytouch">
+          <button id="button" class="un" onclick="appendValue('7')" >7</button>
+          <button id="button" class="deux" onclick="appendValue('8')" >8</button>
+          <button id="button" class="trois" onclick="appendValue('9')" >9</button>
+          <button id="button" class="quatre" onclick="cleardisplay()" >CE</button>
+          <button id="button" class="cinq" onclick="delet()" >C</button>
+    
+          <button id="button" class="six" onclick="appendValue('4')" >4</button>
+          <button id="button" class="sept" onclick="appendValue('5')" >5</button>
+          <button id="button" class="huit" onclick="appendValue('6')" >6</button>
+          <button id="button"  class="neuf" onclick="appendValue('/')" >/</button>
+          <button id="button"  class="dix" onclick="appendValue('*')" >*</button>
+    
+          <button id="button" class="onze" onclick="appendValue('1')" >1</button>
+          <button id="button" class="douze" onclick="appendValue('2')" >2</button>
+          <button id="button" class="treize" onclick="appendValue('3')" >3</button>
+          <button id="button" class="quatorze" onclick="appendValue('-')" >-</button>
+          <button id="button" class="quinze" onclick="appendValue('+')" >+</button>
+    
+          <button id="button" class="seize" onclick="appendValue('0')" >0</button>
+          <button id="button"  class="dit-sept" onclick="appendValue('.')" >.</button>
+          <button id="button"  class="dit-huit" onclick="calaculate()" >=</button>
+    
+        </div>
+    </div>
+    
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+  <script src="calculatrice.js"></script>
+</body>
+
+</html>

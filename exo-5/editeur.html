@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="editeur.css">
+    <title>Editeur du text en temp réel</title>
+</head>
+
+<body>
+    <div class="editeur">
+        <div class="outils">
+            <input type="number" min="1" max="100" value="16" onchange="font(this)">
+            <!-- le button pour du text en gras -->
+            <button type="button" class="btn" data-element="bold"><i class="fa-solid fa-bold"></i></button>
+
+            <!-- le button pour du text en italic -->
+            <button type="button" class="btn" data-element="italic"><i class="fa-solid fa-italic"></i></button>
+
+            <!-- le button pour du text souliger -->
+            <button type="button" class="btn" data-element="underline"><i class="fa-solid fa-underline"></i></button>
+
+            <!-- le button pour inserer une liste non ordonne -->
+            <button type="button" class="btn" data-element="insertUnorderedlist"><i class="fa-solid fa-list-ul"></i></button>
+
+            <!-- le button pour inserer une liste  ordonne -->
+            <button type="button" class="btn" data-element="insertOrderedlist"><i class="fa-solid fa-list-ol"></i></button>
+
+            <!-- le button pour inserer un lien -->
+            <button type="button" class="btn" data-element="createlink"><i class="fa-solid fa-link"></i></button>
+
+            <!-- le button pour mettre un texte a gauche -->
+            <button type="button" class="btn" data-element="justifyLeft"><i class="fa-solid fa-align-left"></i></button>
+
+            <!-- le button pour mettre un texte au center -->
+            <button type="button" class="btn" data-element="justifyCenter"><i class="fa-solid fa-align-center"></i></button>
+
+            <!-- le button pour mettre un texte a droite -->
+            <button type="button" class="btn" data-element="justifyRight"><i class="fa-solid fa-align-right"></i></button>
+
+            <!-- le button pour inserer une image -->
+            <button type="button" class="btn" data-element="insererImage"><i class="fa-solid fa-image"></i></button>
+            <input type="color" onchange="color(this)">
+        </div>
+        <div class="texte" contenteditable="true"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

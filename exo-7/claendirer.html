@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendrier Interactif</title>
+  <link href="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="claendirer.css">
+</head>
+<body class="">
+    <div class="col-md-6 myBody">
+        <div class="card cage">
+            <div class="card-body">
+                <div class="wrapper">
+                    <header>
+                      <p class="current-date"></p>
+                      <div class="icons">
+                        <span id="prev" class="material-symbols-rounded"> < </span>
+                        <span id="next" class="material-symbols-rounded"> > </span>
+                      </div>
+                    </header>
+                    <div class="calendar">
+                      <ul class="weeks">
+                        <li>Dim</li>
+                        <li>Lun</li>
+                        <li>Mar</li>
+                        <li>Mer</li>
+                        <li>Jeu</li>
+                        <li>Ven</li>
+                        <li>Sam</li>
+                      </ul>
+                      <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="contenu-modal" id="contenu">
+            <div id="div-afiche"></div>
+            <span class="span" id="span">&times;</span>
+            <form id="form" class="py-3">
+                <input type="text" id="myinput1" placeholder="Ajouter un titre" required><br><br>
+                <textarea name="" id="myinput2" cols="30" rows="10"></textarea><br><br>
+                <input type="submit" id="btn" value="Ajouter">
+            </form>
+
+            <div id="nosTache" class="fs-5">Aucune evenement ajoutr </div>
+
+            <ol id="list" class="py-3"></ol>
+        </div>
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+  <script src="claendirer.js"></script>
+</body>
+</html>
